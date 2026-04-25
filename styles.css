@@ -713,7 +713,7 @@ p {
 
 @media (max-width: 1200px) {
   .email-entry-left-2 {
-    width: 200px;
+    width: 400px;
     padding: 0.8em;
   }
 }
