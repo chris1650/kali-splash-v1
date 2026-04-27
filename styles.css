@@ -107,6 +107,12 @@ p {
   text-transform: uppercase;
 }
 
+@media (max-width: 700px) {
+  .los-angeles-text {
+    font-size: clamp(2rem, 1vw, 4rem)
+  }
+}
+
 .title {
   text-align: center;
 }
