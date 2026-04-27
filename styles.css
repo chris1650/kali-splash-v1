@@ -821,3 +821,70 @@ p {
     transform: translateY(0);
   }
 }
+
+/* #video-entry {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(0.77, 0, 0.18, 1), border-radius 0.9s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.4s ease 0.85s;
+}
+
+#video-entry video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#video-entry.shrink {
+  transform: scaleY(0.0001) scaleX(0.55);
+  border-radius: 30px;
+  opacity: 0;
+} */
+
+#video-entry {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  transform-origin: bottom center;
+  pointer-events: none;
+
+  animation: intro-sequence 6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  will-change: transform, opacity;
+}
+
+#video-entry video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes intro-sequence {
+  0% {
+    transform: scaleY(0.08) scaleX(0.5);
+    border-radius: 30px;
+    opacity: 0;
+  }
+  20% {
+    transform: scaleY(1) scaleX(1);
+    border-radius: 0px;
+    opacity: 1;
+  }
+  80% {
+    transform: scaleY(1) scaleX(1);
+    border-radius: 0px;
+    opacity: 1;
+  }
+  95% {
+    transform: scaleY(0.0001) scaleX(0.55);
+    border-radius: 30px;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0.0001) scaleX(0.55);
+    border-radius: 30;
+    opacity: 0;
+  }
+}
+
