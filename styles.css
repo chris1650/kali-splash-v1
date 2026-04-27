@@ -215,12 +215,6 @@ p {
     backface-visibility: hidden;
 }
 
-@media (max-width: 700px) {
-  .banner-video video {
-
-  }
-}
-
 .section-3 {
   position: relative;
   display: flex;
@@ -581,7 +575,7 @@ p {
 }
 
 .section-6-right img {
-  object-position: -900px -30px;
+  object-position: -600px -30px;
   transform: scale(1.3);
   object-fit: cover;
 }
