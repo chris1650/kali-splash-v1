@@ -850,7 +850,7 @@ p {
   transform-origin: bottom center;
   pointer-events: none;
 
-  animation: intro-sequence 6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: intro-sequence 10s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   will-change: transform, opacity;
 }
 
@@ -863,7 +863,7 @@ p {
 @keyframes intro-sequence {
   0% {
     transform: scaleY(0.08) scaleX(0.5);
-    border-radius: 30px;
+    border-radius: 100px;
     opacity: 0;
   }
   20% {
@@ -878,12 +878,12 @@ p {
   }
   95% {
     transform: scaleY(0.0001) scaleX(0.55);
-    border-radius: 30px;
+    border-radius: 100px;
     opacity: 1;
   }
   100% {
     transform: scaleY(0.0001) scaleX(0.55);
-    border-radius: 30px;
+    border-radius: 100px;
     opacity: 0;
   }
 }
