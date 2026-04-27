@@ -883,7 +883,7 @@ p {
   }
   100% {
     transform: scaleY(0.0001) scaleX(0.55);
-    border-radius: 30;
+    border-radius: 30px;
     opacity: 0;
   }
 }
