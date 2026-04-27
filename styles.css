@@ -15,6 +15,10 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -text-size-adjust: 100%;
 }
 
 img {
@@ -27,21 +31,21 @@ h1 {
   font-family: "ivyora-display", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 2em;
+  font-size: clamp(2rem; 5vw, 5rem);
 }
 
 h2 {
   font-family: "ivyora-display", serif;
   font-style: italic;
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: clamp(1.4rem, 3vw, 4rem);
 }
 
 p {
   font-family: "owners-text", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: clamp(1.2rem, 2vw, 3rem);
 }
 
 .header {
