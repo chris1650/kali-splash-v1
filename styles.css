@@ -32,14 +32,14 @@ h1 {
   font-family: "ivyora-display", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-size: clamp(1.4rem, 2.4vw, 2.4rem);
 }
 
 h2 {
   font-family: "ivyora-display", serif;
   font-style: italic;
   font-weight: normal;
-  font-size: clamp(1.3rem, 2vw, 2.5rem);
+  font-size: clamp(1.2rem, 1.4vw, 2.2rem);
 }
 
 p {
@@ -75,7 +75,7 @@ p {
 .kali-logo {
   position: relative;
   width: auto;
-  height: 6rem;
+  height: clamp(3rem, 4vw + 1rem, 6rem);
 }
 
 .section-1 {
@@ -110,7 +110,7 @@ p {
 
 @media (max-width: 700px) {
   .los-angeles-text {
-    font-size: clamp(3rem, 2vw, rem);
+    font-size: clamp(3rem, 3vw + 1rem, 4rem);
   }
 }
 
@@ -688,7 +688,7 @@ p {
   font-size: 4em;
   font-stretch: 60%;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
   line-height: 1;
@@ -696,7 +696,7 @@ p {
 
 @media (max-width: 700px) {
   .section-7-banner-header {
-    font-size: clamp(clamp(2rem, 6vh, 4rem));
+    font-size: clamp(2rem, 6vh, 4rem);
   }
 }
 
@@ -946,5 +946,3 @@ p {
     opacity: 0;
   }
 }
-
-
