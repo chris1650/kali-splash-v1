@@ -434,7 +434,7 @@ p {
 
 @media (max-width: 700px) {
   .section-4-right-bottom-text {
-    font-size: clamp(2rem, 6vh, 4rem);
+    font-size: clamp(1.6rem, 5.2vh, 3.6rem);
     line-height: 1.1;
   }
 }
