@@ -83,9 +83,6 @@ p {
   display: flex;
   width: 100vw;
   height: fit-content;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-1-container {
@@ -204,9 +201,6 @@ p {
   display: flex;
   width: 100vw;
   height: fit-content;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .banner {
@@ -234,9 +228,6 @@ p {
   width: 100vw;
   height: auto;
   padding-bottom: 40px;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-3-container {
@@ -337,9 +328,6 @@ p {
   width: 100vw;
   height: fit-content;
   padding: 40px;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-4-container {
@@ -438,9 +426,6 @@ p {
   background-color: #002dff;
   width: 100vw;
   height: fit-content;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-5-container {
@@ -539,9 +524,6 @@ p {
   display: flex;
   width: 100vw;
   height: fit-content;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-6-container {
@@ -632,9 +614,6 @@ p {
   width: 100vw;
   height: fit-content;
   overflow: hidden;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-7-container {
@@ -768,9 +747,6 @@ p {
   display: flex;
   width: 100vw;
   height: fit-content;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-8-container {
@@ -847,9 +823,6 @@ p {
   display: flex;
   width: 100vw;
   height: fit-content;
-  animation: fade-in 4s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 80%;
 }
 
 .section-9-container {
@@ -870,7 +843,7 @@ p {
   text-align: center;
 }
 
-@keyframes fade-in {
+/* @keyframes fade-in {
   from {
     opacity: 0;
     transform: translateY(50px);
@@ -879,7 +852,7 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* #video-entry {
   position: fixed;
@@ -947,4 +920,33 @@ p {
     border-radius: 30px;
     opacity: 0;
   }
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7,
+.section-8,
+.section-9 {
+  opacity: 0.2;
+  transform: translateY(50px) scale(0.75);
+  transition:
+    opacity 1.4s cubic-bezier(0.5, 0, 0.5, 1),
+    transform 1.4s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.section-1.visible,
+.section-2.visible,
+.section-3.visible,
+.section-4.visible,
+.section-5.visible,
+.section-6.visible,
+.section-7.visible,
+.section-8.visible,
+.section-9.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
