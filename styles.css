@@ -20,6 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  height: -webkit-fill-available;
 }
 
 img {
@@ -880,6 +881,8 @@ p {
   inset: 0;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
+  height: -webkit-fill-available;
   z-index: 9999;
   transform-origin: bottom center;
   pointer-events: none;
