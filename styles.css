@@ -11,14 +11,15 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  -text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 img {
@@ -31,7 +32,7 @@ h1 {
   font-family: "ivyora-display", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(1.6rem; 3vw, 3rem);
+  font-size: clamp(1.6rem, 3vw, 3rem);
 }
 
 h2 {
@@ -109,7 +110,7 @@ p {
 
 @media (max-width: 700px) {
   .los-angeles-text {
-    font-size: clamp(2rem, 1vw, 4rem)
+    font-size: clamp(3rem, 2vw, rem);
   }
 }
 
@@ -221,10 +222,10 @@ p {
 }
 
 .banner-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
 }
 
 .section-3 {
@@ -301,6 +302,12 @@ p {
   height: 40px;
 }
 
+@media (max-width: 700px) {
+  .email-entry-left {
+    width: 200px;
+  }
+}
+
 .email-entry-left-text {
   position: absolute;
   top: 6px;
@@ -308,6 +315,7 @@ p {
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.1em;
 }
+
 
 .email-button-right button {
   border: none;
@@ -320,7 +328,7 @@ p {
 
 @media (max-width: 700px) {
   .email-button-right button {
-    width: 400px;
+    width: 200px;
   }
 }
 
@@ -339,7 +347,7 @@ p {
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -352,6 +360,12 @@ p {
 .section-4-left {
   position: relative;
   width: 50%;
+}
+
+.section-4-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 700px) {
@@ -412,6 +426,13 @@ p {
   line-height: 1.4;
 }
 
+@media (max-width: 700px) {
+  .section-4-right-bottom-text {
+    font-size: clamp(2rem, 6vh, 4rem);
+    line-height: 1.1;
+  }
+}
+
 .section-5 {
   position: relative;
   display: flex;
@@ -464,6 +485,13 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .section-5-right-header {
+    font-size: clamp(2rem, 6vh, 4rem);
+    line-height: 1.1;
+  }
 }
 
 .section-5-right p {
@@ -594,7 +622,7 @@ p {
 
 @media (max-width: 700px) {
   .section-6-right img {
-    object-position: -300px 0;
+    object-position: -220px 0;
   }
 }
 
@@ -666,6 +694,12 @@ p {
   line-height: 1;
 }
 
+@media (max-width: 700px) {
+  .section-7-banner-header {
+    font-size: clamp(clamp(2rem, 6vh, 4rem));
+  }
+}
+
 .section-7-banner-subheader {
   font-family: "ivyora-display", serif;
   font-style: italic;
@@ -712,14 +746,14 @@ p {
 @media (max-width: 700px) {
   .email-entry-left-2 {
     flex-direction: column;
-    width: 400px;
+    width: 200px;
     padding: 0.6em;
   }
 }
 
 @media (max-width: 1200px) {
   .email-entry-left-2 {
-    width: 400px;
+    width: 200px;
     padding: 0.8em;
   }
 }
@@ -750,6 +784,12 @@ p {
   padding: 4em;
 }
 
+@media (max-width: 700px) {
+  .section-8-container {
+    flex-direction: column;
+  }
+}
+
 .section-8-logo {
   height: 100px;
   width: auto;
@@ -769,6 +809,13 @@ p {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5em;
+}
+
+@media (max-width: 700px) {
+  .section-8-social-stack {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .section-8-social-stack-text {
@@ -889,7 +936,7 @@ p {
     opacity: 1;
   }
   90% {
-    transform: scaleY(1.1) scaleX(1.1)
+    transform: scaleY(1.1) scaleX(1.1);
     border-radius: 0px;
     opacity: 1;
   }
@@ -899,4 +946,3 @@ p {
     opacity: 0;
   }
 }
-
