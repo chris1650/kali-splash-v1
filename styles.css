@@ -150,7 +150,7 @@ p {
 .kali-hotel-1 {
   position: relative;
   object-fit: cover;
-  object-position: -40px;
+  object-position: 80% center;
   transform: scale(1.3);
   transform-origin: bottom center;
 }
@@ -315,7 +315,6 @@ p {
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.1em;
 }
-
 
 .email-button-right button {
   border: none;
@@ -616,9 +615,9 @@ p {
 
 .section-6-right img {
   object-position: 100% center;
-  transform: scale(1.3);
+  transform: scale(1.1);
   object-fit: cover;
-  transform-origin: left bottom;
+  transform-origin: right bottom;
 }
 
 @media (max-width: 700px) {
@@ -748,14 +747,14 @@ p {
   .email-entry-left-2 {
     flex-direction: column;
     width: 200px;
-    padding: clamp(.3rem, .8vw, .8rem);
+    padding: clamp(0.3rem, 0.8vw, 0.8rem);
   }
 }
 
 @media (max-width: 1200px) {
   .email-entry-left-2 {
     width: 200px;
-    padding: clamp(.3rem, .8vw, .8rem);
+    padding: clamp(0.3rem, 0.8vw, 0.8rem);
   }
 }
 
