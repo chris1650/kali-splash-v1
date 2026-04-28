@@ -213,6 +213,9 @@ p {
   width: 100%;
   height: auto;
   padding-bottom: 40px;
+  animation: fade-in 4s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 80%;
 }
 
 .banner-video {
@@ -266,6 +269,9 @@ p {
 .section-3-container p {
   padding: 0 300px;
   line-height: 1.4;
+  animation: fade-in 4s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 80%;
 }
 
 @media (max-width: 700px) {
@@ -485,6 +491,9 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1.4;
+  animation: fade-in 4s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 80%;
 }
 
 @media (max-width: 700px) {
@@ -590,6 +599,9 @@ p {
 
 .dual-col-right-section-6 h1 {
   font-size: 3em;
+  animation: fade-in 4s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 80%;
 }
 
 @media (max-width: 480px) {
