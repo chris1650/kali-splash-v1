@@ -933,12 +933,17 @@ p {
 .section-6,
 .section-7,
 .section-8,
-.section-9 {
+.section-9,
+.dual-col-right-header,
+.section-3-italic,
+.section-4-right-bottom-text,
+.section-5-right-header,
+.dual-column-right-section-6 h1 {
   opacity: 0.2;
-  transform: translateY(50px) scale(0.75);
+  transform: translateY(50px) scale(0.8);
   transition:
-    opacity 1.4s cubic-bezier(0.5, 0, 0.5, 1),
-    transform 1.4s cubic-bezier(0.5, 0, 0.5, 1);
+    opacity 1.2s cubic-bezier(0.2, 0.1, 0.4, 1),
+    transform 1.2s cubic-bezier(0.2, 0.1, 0.4, 1);
 }
 
 .section-1.visible,
@@ -949,7 +954,12 @@ p {
 .section-6.visible,
 .section-7.visible,
 .section-8.visible,
-.section-9.visible {
+.section-9.visible,
+.dual-col-right-header.visible,
+.section-3-italic.visible,
+.section-4-right-bottom-text.visible,
+.section-5-right-header.visible,
+.dual-column-right-section-6 h1.visible {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
