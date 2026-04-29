@@ -887,12 +887,28 @@ p {
   transform-origin: bottom center;
   pointer-events: none;
   transform: translateZ(0);
-  animation: intro-sequence 8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: intro-sequence 12s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   will-change: transform, opacity;
-
   padding-bottom: env(safe-area-inset-bottom);
   padding-top: env(safe-area-inset-top);
 }
+
+/* #video-entry {
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  height: -webkit-fill-available;
+  z-index: 9999;
+  transform-origin: bottom center;
+  pointer-events: none;
+  transform: translateZ(0);
+  overflow: none;
+  will-change: transform, opacity;
+} */
 
 #video-entry video {
   width: 100%;
